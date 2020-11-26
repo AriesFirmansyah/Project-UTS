@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    color: white;
+    background-color: black;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	transition: 1.8s;
+}
+
+.left { text-align: left }
+
+.center { text-align: center }
+
+.inline {
+	display: inline-block;
+}
+
+
+.profile {
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.profile img{
+	margin-top: 25px;
+	width:200px;
+	height:190px; 
+	border-radius: 50%;
+	box-shadow: 0px 0px 27px #0CE5E2;
+    transition: 1s;
+	z-index: 1;
+}
+
+.profile img:hover {
+	transition-delay: 0.1s;
+	box-shadow: 0px 0px 30px;
+	transform: scale(1.05)
+}
+
+.profile p{
+	font-size: 30px;
+	font-weight: bold;
+	color: aliceblue;
+}
+
+.LinkSosmed {
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.LinkSosmed img{
+	width: 3%;
+	box-sizing: border-box;
+	border: 1px solid linear-gradient(90deg, transparent, aqua);
+	border-radius: 50%;
+	display: inline-block;
+	background-color: aqua;
+	padding: 2px;
+
+}
+
+.LinkSosmed img:hover {
+	transition: 2s;
+	box-sizing: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+.btnCont {
+	text-align: center;
+	z-index: 1;
+}
+
+.btnAboutMe{
+	width: 200px;
+	height: 60px;
+	margin-top: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	text-align:center;	
+    background-color: #101223;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+	border: 5px solid #0CE5E2;
+	font-size: 18px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	z-index: 1;
+	background: linear-gradient(90deg, transparent, red);
+}
+
+.btnAboutMe:hover{
+	transition-delay: 0.1s;
+	background-color: #16D7FF;
+	border: 5px solid #06FF68;
+	outline-style: outset;
+	outline-style: inset;
+	color: black;
+}
+
+.popUpCont {
+	background-color: #038DFF;
+	border-radius: 4px;
+	text-align: center;
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: none;
+	top: 7%;
+	transition-delay: 1s;
+	cursor: pointer;
+	overflow-x: hidden;
+	z-index: 2;
+}
+.popUpCont:hover { background-color: #0072D1 }
+
+.popUpCont img {
+	width: 1.4%;
+	margin-left: 47%;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.popUpCont img:hover {transform: scale(1.2) }
+
+.popUpCont p{
+	font-size: 22px;
+	font-weight: bold;
+	color: aliceblue;
+	display: block;
+}
+
+.popUpCont p:hover { color: black }
+
+.refSource {
+	background-color: aliceblue;
+	text-align: center;
+}
+
+.refSource p{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footerPopup {
+	display: inline-block;
+}
+.footerPopup li img {
+	display: inline-block;
+	width: 2%;
+	left: -7%;
+	top: 83.7%
+}
+
+
+/* RESPONSIVE */
+@media only screen and (min-width: 320px) {
+	.LinkSosmed img {
+	width: 13%;
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	.LinkSosmed img {
+	width: 13%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.LinkSosmed img {
+	width: 8%;
+	}
+}
+
+@media only screen and (min-width: 1360px) {
+	.LinkSosmed img {
+	width: 3%;
+	}
+}
+
+
+

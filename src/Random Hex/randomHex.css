@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    color: white;
+    background-color: black;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	transition: 1.8s;
+}
+
+.left { text-align: left }
+
+.center { text-align: center }
+
+.inline {
+	display: inline-block;
+}
+
+
+.RHPage {
+	text-align: center;
+	margin-top: 13%;
+}
+
+.textColourCode {
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	transition: 2s;
+}
+
+.buttonNewColour{
+	text-decoration: none;
+	font-weight: bold;
+	color: #4F318C;
+	text-align:center;	
+    background-color: #CDD1D4;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+	border: 2px solid black;
+	font-size: 21px;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 220px;
+}
+.buttonNewColour:hover { background-color: green }
+
+.buttonGoToHome{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	text-align:center;	
+    background-color: #CDD1D4;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+	border: 2px solid black;
+	font-size: 21px;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 220px;
+	margin-top: 1px;
+}
+.buttonGoToHome:hover { background-color: green }
+
+@media only screen and (max-width: 1024px) {
+	.RHPage {
+		margin-top: 40%;
+	}
+}
